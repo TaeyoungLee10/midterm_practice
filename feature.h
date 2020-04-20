@@ -7,7 +7,7 @@ typedef struct{
 	int score;
 }SCORE;
 
-int add_score();
+int add_score(SCORE* p);
 int read_score(SCORE p);
 int list_score(SCORE p[], int count);
-int update_score();
+int update_score(SCORE* p);
