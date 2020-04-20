@@ -14,17 +14,17 @@ void read_score(SCORE p){
 	printf("%-5s %d\n", p.name, p.score);
 }
 
-int list_score(SCORE p[], int count){
+int list_score(SCORE* p[], int count){
 	printf("No Name    Score\n");
 	printf("=================\n");
 	for(int i=0;i<count;i++){
 	if(p[i]!=NULL)
 	printf("%-2d ", i+1);
-	readscore(*p[i]);
+	read_score(*p[i]);
 	}
 }
 
-int update_score(){
+int update_score(SCORE* p){
 	printf("Name: ");
 	scanf("%s", p->name);
 	printf("Score: ");
