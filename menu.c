@@ -1,6 +1,6 @@
 //CRUD function
 //main.c
-#include <stdio.h>
+#include "feature.h" 
 
 typedef struct{
 	char name[20];
@@ -26,8 +26,15 @@ int main(void){
 		menu= select_menu();
 		if(menu==0) break;
 		else if(menu==1){
+			if(count>0)
+				list_score(slist, curcount);
+			else
+				printf("=> No data\n");
 		}
 		else if(menu==2){
+			slist[curcount]=(SCORE*)malloc(sizeof(SCORE));
+			count+= add_score(slist[curcount];
+			curcount++;
 		}
 		else if(menu==3){
 		}
