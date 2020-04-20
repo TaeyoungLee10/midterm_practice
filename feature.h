@@ -9,5 +9,5 @@ typedef struct{
 
 int add_score(SCORE* p);
 void read_score(SCORE p);
-int list_score(SCORE p[], int count);
+int list_score(SCORE* p[], int count);
 int update_score(SCORE* p);

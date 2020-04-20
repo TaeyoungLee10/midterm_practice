@@ -2,11 +2,6 @@
 //main.c
 #include "feature.h" 
 
-typedef struct{
-	char name[20];
-	int score;
-}SCORE;
-
 int select_menu(){
 	int menu;
 	printf("\n===SCORE MANAGER===\n\n");
@@ -33,7 +28,7 @@ int main(void){
 		}
 		else if(menu==2){
 			slist[curcount]=(SCORE*)malloc(sizeof(SCORE));
-			count+= add_score(slist[curcount];
+			count+= add_score(slist[curcount]);
 			curcount++;
 		}
 		else if(menu==3){
